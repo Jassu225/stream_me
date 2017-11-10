@@ -1,28 +1,26 @@
 {
   "name": "stream_me",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A video chat web application",
-  "private": true,
   "dependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-scripts": "1.0.17"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-sslify": "^1.2.0",
+    "socket.io": "^2.0.4"
   },
-  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom"
+    "start": "node ./server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jassu225/stream_me.git"
   },
   "keywords": [
-    "video chat",
-    "video stream",
+    "online",
+    "video",
     "stream",
-    "online chat"
+    "chat"
   ],
   "author": "Jaswanth Sai Sattenapalli",
   "license": "MIT",
