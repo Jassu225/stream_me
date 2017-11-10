@@ -1,4 +1,5 @@
-let socket = io.connect('https://192.168.31.138:3000');
+
+let socket = io.connect("https://192.168.31.100:3000");
 
 socket.on('room created', function (data) {
     console.log(data);
@@ -47,9 +48,12 @@ socket.on('ice-candidate', (data) => {
 socket.on('srcObject', (data) => {
     console.log('src-object received');
     let json = JSON.parse(decodeURIComponent(data.data));
+    console.log(json);
     if( id != json.id && room === json.room) {
+        console.log('came here');
         if(!remoteView.srcObject) {
             remoteView.srcObject = json.data;
+            console.log('came here too');
         }
     }
 });

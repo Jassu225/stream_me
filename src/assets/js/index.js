@@ -6,7 +6,7 @@ var room;
 var id = new Date().getTime();
 
 root.innerHTML = `<div>` +
-                    `<video id="localView" autoplay></video>` +
+                    `<video id="localView" autoplay muted></video>` +
                     `<input id="createToken" type="text" />` +
                     `<input id="connectToken" type="text" />` +
                     `<h2>Target Stream</h2>`+

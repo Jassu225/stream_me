@@ -89,12 +89,12 @@ io.on('connection', function(socket) {
 
     socket.on("src-object", (data) => {
         console.log('src-object called');
-        socket.emit("srcObject", data);
+        socket.broadcast.emit("srcObject", data);
     });
 });
 
 server.listen(3000, () => {
-    console.log("Server started on  https://localhost:3000");
+    console.log("Server started on  https://localhost:", 3000);
 });
 
 // require("./info.js");

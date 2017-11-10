@@ -1,6 +1,6 @@
 let constraints = {
-    audio: true,
-    video: false
+    audio: false,
+    video: true
 };
 
 function startCall() {

@@ -57,6 +57,7 @@ function handleICEConnectionStateChangeEvent(event) {
     console.log(peer.iceConnectionState);
     switch(peer.iceConnectionState) {
         case "connected":
+        console.log(localView.srcObject);
             sendToServer({
                 type: "src-object",
                 id: id,
